@@ -1,10 +1,10 @@
 package without.inheritance;
 
 public class NormalMember {
-    public int id;
-    public String name;
-    public double discountRate = 1.0; // 100%価格で提供
-    public int ammount;
+    private int id;
+    private String name;
+    private double discountRate = 1.0; // 100%価格で提供
+    private int ammount;
 
     public NormalMember(int _id, String _name){
         this.id = _id;
@@ -39,4 +39,7 @@ public class NormalMember {
         this.ammount = afterAmmount;
     }
     
+    public int getAmmount(){
+        return this.ammount;
+    }
 }

@@ -1,10 +1,10 @@
 package with.inheritance;
 
 public class Member {
-    public int id;
-    public String name;
-    public double discountRate = 1.0; // 100%価格で提供
-    public int ammount;
+    private int id;
+    private String name;
+    private double discountRate = 1.0; // 100%価格で提供
+    private int ammount;
 
     public Member(int _id, String _name){
         this.id = _id;
@@ -37,5 +37,12 @@ public class Member {
                 break;
         }
         this.ammount = afterAmmount;
+    }
+
+    public void setDiscountRate(double _discountRate){
+        this.discountRate = _discountRate;
+    }
+    public int getAmmount(){
+        return this.ammount;
     }
 }
