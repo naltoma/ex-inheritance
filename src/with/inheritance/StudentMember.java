@@ -6,4 +6,10 @@ public class StudentMember extends Member {
         super(_id, _name);
         setDiscountRate(0.7);
     }
+
+    @Override
+    public void sayHello(){
+        System.out.println("いらっしゃい、" + getName() + "さん。");
+    }
+
 }

@@ -7,10 +7,12 @@ public class WithMain {
         System.out.println(member1.getAmmount());
         member1.UseCoupon("A002");
         System.out.println(member1.getAmmount());
+        member1.sayHello();
 
         StudentMember member2 = new StudentMember(2, "naltoma-stu");
         member2.computeAmmount(1000);
         System.out.println(member2.getAmmount());
+        member2.sayHello();
 
         SpecialMember member3 = new SpecialMember(3, "naltoma-special");
         member3.computeAmmount(1000);

@@ -39,10 +39,17 @@ public class Member {
         this.ammount = afterAmmount;
     }
 
+    public void sayHello(){
+        System.out.println("いらっしゃいませ、" + this.name + "様ですね。");
+    }
+
     public void setDiscountRate(double _discountRate){
         this.discountRate = _discountRate;
     }
     public int getAmmount(){
         return this.ammount;
+    }
+    public String getName(){
+        return this.name;
     }
 }
