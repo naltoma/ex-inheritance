@@ -7,6 +7,7 @@ public class Member {
     private int ammount;
 
     public Member(int _id, String _name){
+        System.out.println("Memberクラスのコンストラクタ起動。");
         this.id = _id;
         this.name = _name;
     }
